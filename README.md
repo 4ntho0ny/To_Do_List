@@ -21,12 +21,14 @@ para o seu navegador.
 No arquivo `appsettings.json` está localizado alguma das configurações para conectar a aplicação com o Banco de dados:
 - Se você utilizar um sistema operacional **Linux** ou **MacOS**, a configuração é a seguinte:
 
-  ```"ConnectionStrings": {
+  ```
+  "ConnectionStrings": {
     "DefaultConnection": "Data Source=localhost;Initial Catalog={DATABASENAME};User Id=SA;Password={SUASENHA};Integrated Security=True;TrustServerCertificate=true;Trusted_Connection=false"
   },```
   
 - Caso seja um sistema operacional **Windows**, a configuração é esta:
 
-  ```"ConnectionStrings": {
+  ```
+  "ConnectionStrings": {
     "Data Source={PCNAME}\\SQLEXPRESS;Initial Catalog={DATABASENAME};Integrated Security=True;Connect   Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
   },```
