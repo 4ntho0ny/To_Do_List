@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --light-blue: #e2ebfa;
+    --blue: #0058fa;
+    --light-grey: rgb(207, 207, 207);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    max-width: 90vw;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1),
+    -2px 2px 5px rgba(0, 0, 0, 0.1),
+    2px -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 500px) {
+
+    form {
+        width: 90vw;
+    }
+}
+
+
+form .input-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+
+form .input-control-status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.input-control label, .input-control-status label {
+    font-weight: 500;
+}
+
+.input-control #titulo, #descricao {
+    width: 100%;
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#salvar {
+    font-size: 1rem;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--blue);
+    color: var(--light-blue);
+}
+
+.align-button-submit {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

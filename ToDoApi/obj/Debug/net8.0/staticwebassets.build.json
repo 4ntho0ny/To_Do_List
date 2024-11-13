@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "UBxwStySZDRAWzSeLP08fvdy1PdOLlk7TyTCe1qNDq0=",
+  "Source": "ToDoApi",
+  "BasePath": "_content/ToDoApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ToDoApi/wwwroot",
+      "Source": "ToDoApi",
+      "ContentRoot": "/home/anthony/workstation/dot_net/apis_dotnet/ToDoList/ToDoApi/wwwroot/",
+      "BasePath": "_content/ToDoApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

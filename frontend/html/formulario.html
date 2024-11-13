@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/formulario.css">
+    <title>Adicionar tarefa</title>
+</head>
+<body>
+    <form action="" method="post" data-form>
+        <div class="input-control">
+            <label for="titulo">Titulo</label>
+            <input type="text" name="titulo" id="titulo">
+        </div>
+        <div class="input-control">
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" name="descricao" rows="4" cols="50" placeholder="Descrição"></textarea>            
+        </div>
+        <div class="align-button-submit">
+            <div class="input-control-status">
+                <label for="status">Status</label>
+                <input type="checkbox" name="status" id="status" value="concluido">
+            </div>
+            <input type="submit" value="Salvar" id="salvar" data-button>
+        </div>
+    </form>
+    <script src="../javascript/formulario.js"></script>
+</body>
+</html>
