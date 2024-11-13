@@ -1,0 +1,15 @@
+- Criação do Banco de dados:
+
+CREATE DATABASE ToDoListDB;
+
+- Tabela do projeto:
+
+CREATE TABLE NomeDaTabela (
+    id BIGINT IDENTITY(1,1) NOT NULL,
+    titulo NVARCHAR(MAX) NOT NULL,
+    descricao NVARCHAR(MAX) NOT NULL,
+    status BIT NOT NULL,
+    PRIMARY KEY (id)
+);
+
+OBS: Não é necessário criar a tabela manualmente, pois são criadas através da API.
