@@ -24,11 +24,13 @@ No arquivo `appsettings.json` está localizado alguma das configurações para c
   ```
   "ConnectionStrings": {
     "DefaultConnection": "Data Source=localhost;Initial Catalog={DATABASENAME};User Id=SA;Password={SUASENHA};Integrated Security=True;TrustServerCertificate=true;Trusted_Connection=false"
-  },```
+  },
+  ```
   
 - Caso seja um sistema operacional **Windows**, a configuração é esta:
 
   ```
   "ConnectionStrings": {
     "DefaultConnection": Data Source={PCNAME}\\SQLEXPRESS;Initial Catalog={DATABASENAME};Integrated Security=True;Connect   Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
-  },```
+  },
+  ```
