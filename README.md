@@ -15,3 +15,18 @@ Mantenha o terminal da API rodando, abra um novo terminal e digite `cd frontend/
 É desejável que você tenha a extenção **Live Server** instalada. Caso tenha, é só clicar em **Go Live** no canto inferior direito.
 Caso não tenha, é so ir na barra lateral **Explorar** do Visual Studio Code, entrar neste caminho `frontend/html/` e arrastar o `index.html`
 para o seu navegador.
+
+## Observações
+
+No arquivo `appsettings.json` está localizado alguma das configurações para conectar a aplicação com o Banco de dados:
+- Se você utilizar um sistema operacional **Linux** ou **MacOS**, a configuração é a seguinte:
+
+  `"ConnectionStrings": {
+    "DefaultConnection": "Data Source=localhost;Initial Catalog={DATABASENAME};User Id=SA;Password={SUASENHA};Integrated Security=True;TrustServerCertificate=true;Trusted_Connection=false"
+  },`
+  
+- Caso seja um sistema operacional **Windows**, a configuração é esta:
+
+  `"ConnectionStrings": {
+    "Data Source={PCNAME}\\SQLEXPRESS;Initial Catalog={DATABASENAME};Integrated Security=True;Connect   Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
+  },`
